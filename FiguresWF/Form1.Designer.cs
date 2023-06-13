@@ -30,17 +30,20 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.figure_comboBox = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.size1_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
             this.size2_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.size1_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.figure_comboBox = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.square_button = new System.Windows.Forms.Button();
             this.protocol_listBox = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.size1_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.size2_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.size1_numericUpDown)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +58,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.size2_numericUpDown);
             this.groupBox1.Controls.Add(this.size1_numericUpDown);
             this.groupBox1.Controls.Add(this.figure_comboBox);
@@ -63,36 +68,54 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(223, 131);
+            this.groupBox1.Size = new System.Drawing.Size(223, 164);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(142, 120);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(75, 20);
+            this.numericUpDown1.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Ширина";
+            // 
+            // size2_numericUpDown
+            // 
+            this.size2_numericUpDown.Location = new System.Drawing.Point(142, 92);
+            this.size2_numericUpDown.Name = "size2_numericUpDown";
+            this.size2_numericUpDown.Size = new System.Drawing.Size(75, 20);
+            this.size2_numericUpDown.TabIndex = 2;
+            // 
+            // size1_numericUpDown
+            // 
+            this.size1_numericUpDown.Location = new System.Drawing.Point(142, 66);
+            this.size1_numericUpDown.Name = "size1_numericUpDown";
+            this.size1_numericUpDown.Size = new System.Drawing.Size(75, 20);
+            this.size1_numericUpDown.TabIndex = 2;
             // 
             // figure_comboBox
             // 
             this.figure_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.figure_comboBox.FormattingEnabled = true;
             this.figure_comboBox.Items.AddRange(new object[] {
-            "Прямоугольник"});
+            "Прямоугольник",
+            "Круг",
+            "Треугольник",
+            "Трапеция"});
             this.figure_comboBox.Location = new System.Drawing.Point(71, 27);
             this.figure_comboBox.Name = "figure_comboBox";
             this.figure_comboBox.Size = new System.Drawing.Size(121, 21);
             this.figure_comboBox.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Длина";
-            // 
-            // size1_numericUpDown
-            // 
-            this.size1_numericUpDown.Location = new System.Drawing.Point(71, 68);
-            this.size1_numericUpDown.Name = "size1_numericUpDown";
-            this.size1_numericUpDown.Size = new System.Drawing.Size(75, 20);
-            this.size1_numericUpDown.TabIndex = 2;
+
             // 
             // label3
             // 
@@ -103,16 +126,18 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Ширина";
             // 
-            // size2_numericUpDown
+            // label2
             // 
-            this.size2_numericUpDown.Location = new System.Drawing.Point(71, 94);
-            this.size2_numericUpDown.Name = "size2_numericUpDown";
-            this.size2_numericUpDown.Size = new System.Drawing.Size(75, 20);
-            this.size2_numericUpDown.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Длина";
             // 
             // square_button
             // 
-            this.square_button.Location = new System.Drawing.Point(49, 149);
+            this.square_button.Location = new System.Drawing.Point(12, 193);
             this.square_button.Name = "square_button";
             this.square_button.Size = new System.Drawing.Size(109, 23);
             this.square_button.TabIndex = 2;
@@ -149,11 +174,12 @@
             this.Controls.Add(this.square_button);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Демо";
+            this.Text = "Фул";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.size1_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.size2_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.size1_numericUpDown)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -171,6 +197,8 @@
         private System.Windows.Forms.Button square_button;
         private System.Windows.Forms.ListBox protocol_listBox;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

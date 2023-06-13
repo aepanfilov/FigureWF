@@ -51,8 +51,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="krug.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Rect.cs" />
+    <Compile Include="trapeciya.cs" />
+    <Compile Include="treug.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
