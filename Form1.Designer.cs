@@ -115,6 +115,7 @@
             this.figure_comboBox.Name = "figure_comboBox";
             this.figure_comboBox.Size = new System.Drawing.Size(121, 21);
             this.figure_comboBox.TabIndex = 1;
+
             // 
             // label3
             // 
@@ -153,7 +154,6 @@
             this.protocol_listBox.Name = "protocol_listBox";
             this.protocol_listBox.Size = new System.Drawing.Size(371, 206);
             this.protocol_listBox.TabIndex = 3;
-            this.protocol_listBox.SelectedIndexChanged += new System.EventHandler(this.protocol_listBox_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -201,3 +201,4 @@
         private System.Windows.Forms.Label label4;
     }
 }
+
